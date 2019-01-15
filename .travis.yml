@@ -3,7 +3,7 @@ language: java
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
-  file: "FILE TO UPLOAD"
+  file: "./target/gs-spring-boot-0.1.0.jar"
   skip_cleanup: true
   on:
     tags: true
