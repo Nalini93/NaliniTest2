@@ -1,0 +1,12 @@
+language: java
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_OAUTH_TOKEN
+  file: "./build/libs/gs-spring-boot-0.1.0.jar"
+  provider: heroku
+  api_key: $HEROKU_OAUTH_TOKEN
+  app: nalinitest2
+  skip_cleanup: true
+  on:
+    all_branches: true
