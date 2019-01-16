@@ -5,8 +5,8 @@ deploy:
   api_key: $GITHUB_OAUTH_TOKEN
   file: "./build/libs/gs-spring-boot-0.1.0.jar"
   provider: heroku
-  api_key:
-    secure: $HEROKU_OAUTH_TOKEN
+  api_key: $HEROKU_OAUTH_TOKEN
+  app: test
   skip_cleanup: true
   on:
     all_branches: true
