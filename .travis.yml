@@ -6,7 +6,7 @@ deploy:
   file: "./build/libs/gs-spring-boot-0.1.0.jar"
   provider: heroku
   api_key: $HEROKU_OAUTH_TOKEN
-  app: test
+  app: nalinitest2
   skip_cleanup: true
   on:
     all_branches: true
