@@ -10,7 +10,7 @@ deploy:
       all_branches: true
   - provider: heroku
     api_key: $HEROKU_OAUTH_TOKEN
-    api: nalinitest2
+    app: nalinitest2
     skip_cleanup: true
     on:
       all_branches: true
